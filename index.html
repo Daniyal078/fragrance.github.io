@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../store/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../store/images/logo png.png">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <title>Fragrance World</title>
+</head>
+
+<body>
+    <!---------navbar----------->
+    <div id="navigation">
+        <div class="welcome_bar">Welcome to Fragrance World</div>
+        <!---------------cart icon------------->
+        <a href="#">
+            <img class="cart_icon" src="../store/images/cart icon gold.png" width="60px"></a>
+        <!-----------search icon------------>
+        <a href="../store/search page.html">
+            <img class="search_icon" src="../store/images/search icon gold.png" width="30px"></a>
+        <img class="logo" src="../store/images/logo png.png">
+        <ul class="u1">
+            <li class="mera_L"><a href="../store/index.html">HOME</li></a>
+            <li class="mera_L"><a href="../store/contact.html">CONTACT US</li></a>
+            <li class="mera_L"><a href="../store/about us.html">ABOUT US</li></a>
+            <li class="mera_L"><a href="../store/shop.html">SHOP</li></a>
+        </ul>
+    </div>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="../store/images/banner 8.webp" style="width:100%">
+        <img class="mySlides" src="../store/images/banner3.webp" style="width:100%">
+        <img class="mySlides" src="../store/images/banner 10.jpg" style="width:100%">
+        <img class="mySlides" src="../store/images/banner 9.png" style="width:100%">
+        <img class="mySlides" src="../store/images/banner 7.jpg" style="width:100%">
+        <button class="w3-button_1 w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button_2 w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <br>
+    <br>
+    <div class="banner_image2">
+        <img src="../store/images/banner2.webp" width="100%" alt="">
+    </div>
+    <br>
+    <br>
+    <!---------cards----------->
+    <p>
+    <h2 class="meet">MEET MY COLLECTION </h2>
+    </p>
+    <div id="row">
+        <div class="box">
+            <a href="../store/single card 1.html"><img class="card_image_hov" src="images/005.jpg" width="90%"
+                    alt=""></a>
+            <p>For Him</p>
+        </div>
+        <div class="box">
+            <a href="#"><img class="card_image_hov" src="images/006.jpg" width="90%" alt=""></a>
+            <p>For Her</p>
+        </div>
+        <div class="box">
+            <a href="#"><img class="card_image_hov" src="images/007.jpg" width="90%" alt=""></a>
+            <p>Package Deal</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="banner_image2">
+        <img src="../store/images/banner 3.jpg" width="100%" alt="">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>FRAGRANCE WORLD</section>
+    <footer class="footer-distributed">
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="link-1" href="../store/index.html">Home</a>
+                <a href="../store/contact.html">Contact</a>
+                <a href="../store/about us.html">About</a>
+                <a href="../store/shop.html">Shop</a>
+                <a href="../store/search page.html">Search</a>
+                <a href="#">Privscy policy </a>
+                <a href="#">Refund and Return Policy </a>
+            </p>
+            <div class="social_icons">
+                <a href="https://www.facebook.com/Fragrance-world-105869711947812" target="_blank"
+                    class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/im_daniyal_ali/" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://twitter.com/DanyalAli0" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.youtube.com/channel/UCo_YqZZJQTfvbEdZ1-WyVdQ" target="_blank"
+                    class="fa fa-youtube"></a>
+            </div>
+            <p>Fragrange World &copy; 2020</p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navigation").style.top = "0px";
+            } else {
+                document.getElementById("navigation").style.top = "-250px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
